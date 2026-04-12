@@ -1,0 +1,44 @@
+:root {
+    --cream: #fffdf0;
+    --chocolate: #3d2b1f;
+    --accent: #d2691e;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cream);
+    color: var(--chocolate);
+}
+
+h1, h2, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=2000') center/cover;
+    height: 60vh;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--chocolate);
+}
+
+.price {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.hidden {
+    display: none;
+}

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoti Bakery & Juice | Domlur</title>
+    <title>Jyoti Bakery & Juice | Domlur's Finest</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">JYOTI BAKERY & JUICE</a>
@@ -19,7 +20,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Order Now</a></li>
                 </ul>
             </div>
         </div>
@@ -27,59 +28,88 @@
 
     <header id="home" class="hero-section d-flex align-items-center">
         <div class="container text-center text-white">
-            <h1 class="display-3">Fresh Bakes & Hot Sips</h1>
-            <p class="lead">From our ovens in Domlur to your home since 1995.</p>
-            <a href="#menu" class="btn btn-primary btn-lg mt-3">View Full Menu</a>
+            <h1 class="display-2">Baking Joy Since 1995</h1>
+            <p class="lead">Freshly baked daily in the heart of Domlur.</p>
+            <a href="#menu" class="btn btn-primary btn-lg mt-3">View Today's Bakes</a>
         </div>
     </header>
 
     <section id="menu" class="container py-5">
-        <h2 class="text-center mb-5">Our Menu</h2>
+        <h2 class="text-center mb-5">Our Signature Menu</h2>
         <div class="text-center mb-4">
-            <button class="btn btn-outline-dark filter-btn active" data-filter="all">All</button>
+            <button class="btn btn-outline-dark filter-btn active" data-filter="all">All Items</button>
             <button class="btn btn-outline-dark filter-btn" data-filter="snacks">Snacks & Puffs</button>
             <button class="btn btn-outline-dark filter-btn" data-filter="breads">Breads</button>
             <button class="btn btn-outline-dark filter-btn" data-filter="cakes">Cakes</button>
             <button class="btn btn-outline-dark filter-btn" data-filter="drinks">Drinks</button>
         </div>
 
-        <div class="row g-3" id="menu-container">
-            <div class="col-md-4 menu-item snacks"><div class="card p-3">Veg Puffs <span class="price">₹15</span></div></div>
-            <div class="col-md-4 menu-item snacks"><div class="card p-3">Egg Puffs <span class="price">₹20</span></div></div>
-            <div class="col-md-4 menu-item snacks"><div class="card p-3">Chicken Puffs <span class="price">₹25</span></div></div>
-            <div class="col-md-4 menu-item snacks"><div class="card p-3">Aloo Samosa <span class="price">₹10</span></div></div>
-            <div class="col-md-4 menu-item snacks"><div class="card p-3">Dilkush <span class="price">₹25</span></div></div>
+        <div class="row g-4" id="menu-container">
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Veg Puffs</h5><span class="price">₹15</span></div></div>
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Egg Puffs</h5><span class="price">₹20</span></div></div>
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Chicken Puffs</h5><span class="price">₹25</span></div></div>
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Aloo Samosa</h5><span class="price">₹10</span></div></div>
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Onion Samosa</h5><span class="price">₹10</span></div></div>
+            <div class="col-md-4 menu-item snacks"><div class="card h-100 p-3"><h5 class="card-title">Dilkush</h5><span class="price">₹25</span></div></div>
             
-            <div class="col-md-4 menu-item breads"><div class="card p-3">Khova Bread <span class="price">₹50</span></div></div>
-            <div class="col-md-4 menu-item breads"><div class="card p-3">Milk Bread <span class="price">₹40</span></div></div>
-            <div class="col-md-4 menu-item breads"><div class="card p-3">Sandwich Bread <span class="price">₹35</span></div></div>
+            <div class="col-md-4 menu-item breads"><div class="card h-100 p-3"><h5 class="card-title">Khova Bread</h5><span class="price">₹50</span></div></div>
+            <div class="col-md-4 menu-item breads"><div class="card h-100 p-3"><h5 class="card-title">Milk Bread</h5><span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item breads"><div class="card h-100 p-3"><h5 class="card-title">Sandwich Bread</h5><span class="price">₹35</span></div></div>
 
-            <div class="col-md-4 menu-item cakes"><div class="card p-3">Chocolate Slice <span class="price">₹40</span></div></div>
-            <div class="col-md-4 menu-item cakes"><div class="card p-3">Black Forest <span class="price">₹40</span></div></div>
-            <div class="col-md-4 menu-item cakes"><div class="card p-3">Mango (Seasonal) <span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item cakes"><div class="card h-100 p-3"><h5 class="card-title">Chocolate Slice</h5><span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item cakes"><div class="card h-100 p-3"><h5 class="card-title">Vanilla Slice</h5><span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item cakes"><div class="card h-100 p-3"><h5 class="card-title">Black Forest</h5><span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item cakes"><div class="card h-100 p-3"><h5 class="card-title">Mango (Seasonal)</h5><span class="price">₹40</span></div></div>
+            <div class="col-md-4 menu-item cakes"><div class="card h-100 p-3"><h5 class="card-title">Tutti Fruity</h5><span class="price">₹40</span></div></div>
 
-            <div class="col-md-4 menu-item drinks"><div class="card p-3">Tea / Coffee <span class="price">₹15</span></div></div>
-            <div class="col-md-4 menu-item drinks"><div class="card p-3">Badam Milk <span class="price">₹20</span></div></div>
+            <div class="col-md-4 menu-item drinks"><div class="card h-100 p-3"><h5 class="card-title">Tea</h5><span class="price">₹15</span></div></div>
+            <div class="col-md-4 menu-item drinks"><div class="card h-100 p-3"><h5 class="card-title">Coffee</h5><span class="price">₹15</span></div></div>
+            <div class="col-md-4 menu-item drinks"><div class="card h-100 p-3"><h5 class="card-title">Badam Milk</h5><span class="price">₹20</span></div></div>
         </div>
     </section>
 
     <section id="contact" class="bg-light py-5">
-        <div class="container text-center">
-            <div class="contact-box p-4 bg-white shadow-sm mx-auto" style="max-width: 500px;">
-                <h3>Inquiry Form</h3>
-                <form id="inquiryForm">
-                    <input type="text" id="userName" class="form-control mb-3" placeholder="Your Name" required>
-                    <button type="submit" class="btn btn-primary w-100">Send Inquiry</button>
-                </form>
-                <div id="formFeedback" class="mt-3 d-none"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-box p-4 bg-white shadow-sm rounded border-top border-4 border-warning">
+                        <h2 class="text-center mb-4">Inquiry/Cake Customization</h2>
+                        <form id="inquiryForm">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" id="userName" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contact (Phone/Email)</label>
+                                <input type="text" id="userContact" class="form-control" placeholder="How should we reach you?" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Cake Size / Order Type</label>
+                                <select class="form-select" id="cakeSize">
+                                    <option value="half-kg">0.5 KG</option>
+                                    <option value="one-kg">1 KG</option>
+                                    <option value="two-kg">2 KG +</option>
+                                    <option value="bulk">Bulk Order (Snacks/Juice)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Custom Description</label>
+                                <textarea id="customDesc" class="form-control" rows="4" placeholder="Mention cake flavors, special messages, or dietary requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Submit Custom Inquiry</button>
+                        </form>
+                        <div id="formFeedback" class="mt-3 text-center d-none"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy; 2026 Jyoti Bakery & Juice, Domlur | Rahul Pai (25120753)</p>
+        <p>&copy; 2026 Jyoti Bakery & Juice, Domlur | Rahul Pai (Roll No: 25120753)</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
